@@ -1,54 +1,89 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Default text color */
 }
 
+/* Main Container */
 .container {
     width: 50%;
-    margin: 20px auto;
+    margin: 30px auto;
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
+/* Headings */
+h1 {
+    color: #2c3e50; /* Dark navy blue */
+    text-align: center;
 }
 
+h2 {
+    color: #1a5276; /* Deep blue */
+    border-bottom: 2px solid #3498db; /* Light blue border */
+    padding-bottom: 5px;
+}
+
+/* Lists */
 ul {
     list-style-type: square;
+    padding-left: 20px;
 }
 
+/* Contact Info */
+p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Highlighted Text */
+strong {
+    color: #1a5276; /* Deep blue for emphasis */
+}
+
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
 }
 
 label {
-    margin-top: 10px;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #2c3e50; /* Dark navy blue */
 }
 
 input, textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #95a5a6; /* Subtle gray border */
+    border-radius: 5px;
+    font-size: 14px;
 }
 
+input:focus, textarea:focus {
+    border-color: #3498db; /* Light blue focus */
+    outline: none;
+}
+
+/* Submit Button */
 button {
     margin-top: 15px;
-    padding: 10px;
-    background-color: #28a745;
+    padding: 12px;
+    background: #2ecc71; /* Green */
     color: white;
+    font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #218838;
+    background: #27ae60; /* Darker green */
 }
