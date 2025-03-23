@@ -1,96 +1,50 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Default text color */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume</h1>
+        <h3>Krishnaveni Dudigama</h3>
+        <h3>Third-Year IT Student</h3>
 
-    /* Flexbox added to center the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;  /* Full viewport height */
-}
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Technology in Information Technology, Vashi</li>
+        </ul>
 
-/* Main Container */
-.container {
-    width: 50%;
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-}
+        <h2>Projects</h2>
+        <ul>
+            <li>Restaurant recommendation system</li>
+            <li>Visitors management system</li>
+            <li>Cosmos e-commerce website</li>
+        </ul>
 
-/* Headings */
-h1 {
-    color: #2c3e50; /* Dark navy blue */
-    text-align: center;
-}
+        <h2>Certifications</h2>
+        <p>Internship Completion Certificate</p>
 
-h2 {
-    color: #1a5276; /* Deep blue */
-    border-bottom: 2px solid #3498db; /* Light blue border */
-    padding-bottom: 5px;
-}
+        <h2>Contact</h2>
+        <p>Email: xyz</p>
+        <p>LinkedIn: xyz</p>
+        <p>GitHub: xyz</p>
 
-/* Lists */
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-/* Contact Info */
-p {
-    margin: 5px 0;
-    font-size: 16px;
-}
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-/* Highlighted Text */
-strong {
-    color: #1a5276; /* Deep blue for emphasis */
-}
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-/* Form Styling */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-weight: bold;
-    margin-top: 12px;
-    color: #2c3e50; /* Dark navy blue */
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #95a5a6; /* Subtle gray border */
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-input:focus, textarea:focus {
-    border-color: #3498db; /* Light blue focus */
-    outline: none;
-}
-
-/* Submit Button */
-button {
-    margin-top: 15px;
-    padding: 12px;
-    background: #2ecc71; /* Green */
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background: #27ae60; /* Darker green */
-}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
